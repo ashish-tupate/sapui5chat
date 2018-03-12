@@ -1,0 +1,19 @@
+<core:View controllerName="sap.ui.demo.myFiori.view.Master"
+	xmlns="sap.m" xmlns:core="sap.ui.core">
+	<Page id="idPage" title="">
+		<subHeader>
+			<Bar>
+				<contentLeft>
+					<SearchField id="searchField" search=""
+						placeholder="Username" width="100%" liveChange="liveChangeSearchField">
+					</SearchField>
+				</contentLeft>
+			</Bar>
+		</subHeader>
+		<List id="list" items="{/}" mode="SingleSelectMaster" select="handleListSelect">
+			<StandardListItem type="Active" press="handleListItemPress"
+				title="{userName}" counter="{unread}">
+			</StandardListItem>
+		</List>
+	</Page>
+</core:View>

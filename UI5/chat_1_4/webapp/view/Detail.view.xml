@@ -1,0 +1,11 @@
+<core:View controllerName="sap.ui.demo.myFiori.view.Detail"
+	xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<Page title="Chats" id="pageDetails" navButtonPress="handleNavButtonPress">
+		<List id="idTable" showSeparators="Inner" items="{/}" showNoData="false">
+			<FeedListItem sender="{Author}" icon="{AuthorPicUrl}"
+				senderPress="onSenderPress" iconPress="onIconPress"
+				iconDensityAware="false" info="{Type}" timestamp="{Date}" text="{Text}" />
+		</List>
+		<FeedInput id="fdIp" post="onPost" icon="" />
+	</Page>
+</core:View>

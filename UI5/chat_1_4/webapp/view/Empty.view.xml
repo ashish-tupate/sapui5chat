@@ -1,0 +1,4 @@
+<core:View controllerName="sap.ui.demo.myFiori.view.Empty"
+	xmlns="sap.m" xmlns:core="sap.ui.core">
+	
+</core:View>
